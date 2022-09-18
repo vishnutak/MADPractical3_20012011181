@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:background="@color/white"
+        >
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            app:layout_scrollFlags="scroll|enterAlways|snap"
+            android:layout_height="?attr/actionBarSize" />
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="-40sp"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="180sp"
+                android:layout_marginBottom="-45sp"
+                android:src="@drawable/guni_pink_logo"
+                />
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="523sp"
+                android:layout_marginHorizontal="23sp"
+                android:layout_marginVertical="15sp"
+                android:backgroundTint="#E6D3FB"
+                app:cardCornerRadius="20sp"
+                app:cardElevation="7sp"
+                app:strokeColor="@color/black"
+                tools:ignore="MissingConstraints"
+                >
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/username"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="280sp"
+                    android:layout_height="80sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginVertical="30sp"
+                    app:boxStrokeColor="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="66dp"
+                        android:drawableEnd="@drawable/ic_baseline_person_24"
+                        android:drawableTint="#DA3D90"
+                        android:hint="User Full Name"
+                        android:inputType="text"
+                        android:textColorHint="#9C27B0" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/phone"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="280sp"
+                    android:layout_height="80sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginVertical="105sp"
+                    app:boxStrokeColor="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="66dp"
+                        android:drawableEnd="@drawable/ic_baseline_phone_android_24"
+                        android:drawableTint="#DA3D90"
+                        android:hint="Phone Number"
+                        android:inputType="number"
+                        android:textColorHint="#9C27B0" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/city"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="280sp"
+                    android:layout_height="80sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginVertical="180sp"
+                    app:boxStrokeColor="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="66dp"
+                        android:drawableEnd="@drawable/ic_baseline_person_24"
+                        android:drawableTint="#DA3D90"
+                        android:hint="City"
+                        android:inputType="text"
+                        android:textColorHint="#9C27B0" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/email"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="280sp"
+                    android:layout_height="80sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginVertical="255sp"
+                    app:boxStrokeColor="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="66dp"
+                        android:drawableEnd="@drawable/ic_baseline_email_24"
+                        android:drawableTint="#DA3D90"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress"
+                        android:textColorHint="#9C27B0" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/pass"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="280sp"
+                    android:layout_height="80sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginVertical="330sp"
+                    app:boxStrokeColor="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="66dp"
+                        android:drawableEnd="@drawable/ic_baseline_vpn_key_24"
+                        android:drawableTint="#DA3D90"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:textColorHint="#9C27B0" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/confirmpasss"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="280sp"
+                    android:layout_height="80sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginVertical="405sp"
+                    app:boxStrokeColor="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="66dp"
+                        android:drawableEnd="@drawable/ic_baseline_vpn_key_24"
+                        android:drawableTint="#DA3D90"
+                        android:hint="Confirm Password"
+                        android:inputType="textEmailAddress"
+                        android:textColorHint="#9C27B0" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:elevation="10sp"
+                android:orientation="vertical"
+                android:layout_marginTop="-45sp"
+                android:layout_marginBottom="80sp"
+                >
+                <Button
+                    android:id="@+id/b"
+                    android:layout_width="135sp"
+                    android:layout_height="50sp"
+                    android:backgroundTint="#6200ee"
+                    android:text="Register"
+                    android:textSize="19sp"
+                    android:elevation="10sp"
+                    app:cornerRadius="40sp"
+                    android:layout_gravity="center_horizontal"
+                    tools:ignore="MissingConstraints,NotSibling" />
+
+                <TextView
+                    android:id="@+id/tss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Do you have an account?"
+                    android:textSize="17sp"
+                    tools:ignore="MissingConstraints"
+                    android:layout_marginTop="30sp"
+                    >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/logins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Login"
+                    android:textSize="17sp"
+                    android:textColor="#DA3D90"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    tools:ignore="MissingConstraints"
+                    android:layout_marginLeft="200sp"
+                    android:layout_marginTop="-23sp"
+                    >
+                </TextView>
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior"
+        app:menu="@menu/navigation_menu" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
